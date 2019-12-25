@@ -26,7 +26,9 @@ import com.example.android.dagger.login.LoginActivity
 
 class SettingsActivity : AppCompatActivity() {
 
+
     private lateinit var settingsViewModel: SettingsViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +39,7 @@ class SettingsActivity : AppCompatActivity() {
         settingsViewModel = SettingsViewModel(userManager.userDataRepository!!, userManager)
         setupViews()
     }
+
 
     private fun setupViews() {
         findViewById<Button>(R.id.refresh).setOnClickListener {
